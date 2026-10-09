@@ -11,3 +11,7 @@ Swoją wersje rozbudowałem o dodatkową funkcjonalność (Oryginał dzwonił pr
 
 
 Do wykorzystania w dowolnych projektach 
+
+
+
+SCHEMAT NIEDŁUGO
