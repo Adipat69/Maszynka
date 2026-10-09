@@ -1,5 +1,5 @@
 NAME = main
-SERIAL = COM3
+SERIAL = COM5
 ARDUINO = -F -V -c arduino -P $(SERIAL) -b 115200
 USBASP = avrdude -c usbasp
 
@@ -12,7 +12,7 @@ INC = \
 -I.
 
 Burn : Build
-	avrdude $(USBASP) -p ATMEGA328P -U flash:w:$(NAME).hex:i
+	avrdude $(ARDUINO) -p ATMEGA328P -U flash:w:$(NAME).hex:i
 
 Build : $(NAME).elf
 	avr-objcopy -j .text -j .data -O ihex $< $(NAME).hex
