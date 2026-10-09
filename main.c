@@ -17,17 +17,17 @@ int main(void)
   //9 wysoki 10 niski
         PORTB |= (1 << PB1);
         PORTB &= ~(1 << PB2);
-        _delay_us(46000);
+        _delay_us(4600);
   //Stop
         PORTB &= ~((1 << PB1) | (1 << PB2));
-        _delay_us(20000);
+        _delay_us(4600);
   //9 niski 10 wysoki
         PORTB &= ~(1 << PB1);
         PORTB |= (1 << PB2);
-        _delay_us(46000);
+        _delay_us(4600);
   //Stop
         PORTB &= ~((1 << PB1) | (1 << PB2));
-        _delay_us(20000);
+        _delay_us(4600);
     }
   }
 }
