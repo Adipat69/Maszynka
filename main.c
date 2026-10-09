@@ -2,6 +2,11 @@
 #include <util/delay.h>
 //BOILER PLATE DO TESTÓW HARDWARE
 /////////////////////////////////
+///Dla sinusa 
+////Vout=Vpeak*Pierwiastek(Ton/Thalf)
+///Toteż Ton=thalf*(Vout/Vpeak)^2
+///Toff = Thalf-Ton
+//////////////////////////////////
 int main(void)
 {
  // DEKLARACJA PORTÓW TUTAJ ZMIENIAĆ
@@ -12,17 +17,17 @@ int main(void)
   //9 wysoki 10 niski
         PORTB |= (1 << PB1);
         PORTB &= ~(1 << PB2);
-        _delay_us(10);
+        _delay_us(46000);
   //Stop
         PORTB &= ~((1 << PB1) | (1 << PB2));
-        _delay_us(10);
+        _delay_us(20000);
   //9 niski 10 wysoki
         PORTB &= ~(1 << PB1);
         PORTB |= (1 << PB2);
-        _delay_us(10);
+        _delay_us(46000);
   //Stop
         PORTB &= ~((1 << PB1) | (1 << PB2));
-        _delay_us(10);
+        _delay_us(20000);
     }
   }
 }
