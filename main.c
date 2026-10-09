@@ -1,6 +1,7 @@
 #include <avr/io.h>
 #include <util/delay.h>
 //BOILER PLATE DO TESTÓW HARDWARE
+/////////////////////////////////
 int main(void)
 {
  // DEKLARACJA PORTÓW TUTAJ ZMIENIAĆ
